@@ -17,3 +17,19 @@
 |                      | ano % 4 != 0                   |                   | false          |
 |                      | ano % 4 == 0 && ano % 100 == 0 |                   | false          |
 |                      |                                | ano < 0           | false          |
+
+## Instalando pacotes
+
+**Requisitos:**
+
+* Composer
+
+```
+composer install
+```
+
+## Executando testes
+
+```
+vendor/bin/phpunit test/AnoTest.php
+```
