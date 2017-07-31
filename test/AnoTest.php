@@ -38,6 +38,15 @@ class AnoTest extends TestCase
 
 		$this->assertTrue($stub->bissexto());	
 	}
+
+	public function testDivisivelPorQuatroEDivisivelPorQuatrocentos() {
+		$stub = $this->createMock(Ano::class);
+		
+		$stub->method('valor')->will($this->returnValue(1600));
+		$stub->method('bissexto')->will($this->returnValue(true));
+
+		$this->assertTrue($stub->bissexto());	
+	}
 }
 
 ?>
