@@ -3,6 +3,7 @@
 class Ano
 {
 	function valor() {}
+	function bissexto() {}
 }
 
 ?>
