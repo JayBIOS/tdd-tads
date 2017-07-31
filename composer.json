@@ -1,0 +1,7 @@
+{
+    "name": "tads/php-tdd",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^6.2"
+    }
+}
