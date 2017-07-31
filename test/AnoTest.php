@@ -29,6 +29,15 @@ class AnoTest extends TestCase
 
 		$this->assertFalse($stub->bissexto());	
 	}
+
+	public function testDivisivelPorQuatroENaoPorCem() {
+		$stub = $this->createMock(Ano::class);
+		
+		$stub->method('valor')->will($this->returnValue(1996));
+		$stub->method('bissexto')->will($this->returnValue(true));
+
+		$this->assertTrue($stub->bissexto());	
+	}
 }
 
 ?>
